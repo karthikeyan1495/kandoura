@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_option_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    app:font="@{@string/source_sans_pro_text_bold}" />
+
+                <TextView
+                    android:id="@+id/product_option_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    app:font="@{@string/source_sans_text_semibold}" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/custom_option_recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:id="@+id/option_proceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/proceed"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:font="@{@string/source_sans_pro_text_bold}" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="customerlistVm"
+            type="com.example.tailor.kandoraexpress.CRM.CustomerListVm"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rect_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:id="@+id/cust_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                app:font="@{@string/source_sans_text_regulart}"/>
+
+
+
+            <TextView
+                android:id="@+id/crmcustomer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:onClick="@{customerlistVm::OnClickdetails}"
+                android:textAllCaps="false"
+                app:font="@{@string/source_sans_text_regulart}"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:id="@+id/crmcontact_no"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                app:font="@{@string/source_sans_text_regulart}"/>
+
+
+
+
+            <TextView
+                android:id="@+id/crmcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                app:font="@{@string/source_sans_text_regulart}"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingStart="0dp"
+            android:background="@color/border" />-->
+
+
+
+    </LinearLayout>
+
+</layout>

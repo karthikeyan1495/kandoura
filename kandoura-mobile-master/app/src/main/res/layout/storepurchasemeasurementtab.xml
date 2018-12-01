@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        
+        <variable
+            name="measurementtabVm"
+            type="com.example.tailor.kandoraexpress.storepurchase.customkandora.tab.viewmodal.StorePurchaseMeasurementTabVm"/>
+    </data>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Profile"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                app:font="@{@string/source_sans_text_semibold}"/>
+            
+            
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:onClick="@{measurementtabVm::onClickmesurementprofile}"
+                android:background="@drawable/header_rect">
+
+                <ImageView
+                    android:id="@+id/images"
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_plus"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="60dp"
+                    android:text="New measurement profile"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="18sp"
+                    app:font="@{@string/source_sans_pro_text_bold}" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+
+                android:layout_marginTop="30dp"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:text="@string/proceed_to_checkout"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                app:font="@{@string/source_sans_pro_text_bold}"
+                android:layout_marginBottom="20dp"/>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="source_sans_pro_text_black">SourceSansTextBlack</string>
+    <string name="source_sans_pro_text_bold">SourceSansTextBold</string>
+    <string name="source_sans_text_extra_light">SourceSansTextExtraLight</string>
+    <string name="source_sans_text_light">SourceSansTextLight</string>
+    <string name="source_sans_text_regulart">SourceSansTextRegular</string>
+    <string name="source_sans_text_semibold">SourceSansTextSemiBold</string>
+
+    <string-array name="font_file_name">
+        <item>SourceSansPro_Black.ttf</item>
+        <item>SourceSansPro_Bold.ttf</item>
+        <item>SourceSansPro_ExtraLight.ttf</item>
+        <item>SourceSansPro_Light.ttf</item>
+        <item>SourceSansPro_Regular.ttf</item>
+        <item>SourceSansPro_SemiBold.ttf</item>
+
+    </string-array>
+
+    <string-array name="font_alies_name">
+        <item>@string/source_sans_pro_text_black</item>
+        <item>@string/source_sans_pro_text_bold</item>
+        <item>@string/source_sans_text_extra_light</item>
+        <item>@string/source_sans_text_light</item>
+        <item>@string/source_sans_text_regulart</item>
+        <item>@string/source_sans_text_semibold</item>
+    </string-array>
+
+</resources>

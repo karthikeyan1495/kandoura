@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">Kandora Express</string>
+
+    <!--navigation -->
+    <string name="order">Orders</string>
+    <string name="products">Products</string>
+    <string name="store_purchase">Store Purchase</string>
+    <string name="crm">CRM</string>
+    <string name="custom_kandora">Custom Kandora</string>
+    <string name="select_kandora_type">Select kandora’s type</string>
+
+
+    <!--login  page-->
+
+    <string name="welcome_back">Welcome back!</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sig_in">Sign in</string>
+
+
+    <!--forgot password page-->
+    <string name="forgot_your_password">Forgot your password</string>
+    <string name="reset_password">Reset Password</string>
+
+    <!--home page-->
+
+    <string name="new1">New</string>
+    <string name="order_id">Order ID</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="product_name">Product Name</string>
+    <string name="review_accept">Review&amp; Accept</string>
+    <string name="ongoing_orders">Ongoing</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="status">Status</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <!--edit profile page-->
+    <string name="email_Address">E-mail Address</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="update">Update</string>
+    <string name="edit_delivery_location">Edit Delivery Location</string>
+    <string name="edit_delivery_content">Click below button to edit Delivery Location and Delivery Cost.</string>
+
+
+    <!--delivery location page-->
+
+    <string name="delivery_location">Delivery Location</string>
+    <string name="selected_area">Select Area</string>
+    <string name="selected_country">Select Country</string>
+
+
+    <!--CRM page-->
+    <string name="customer">Customers</string>
+    <string name="create_customer">Create Customers</string>
+    <string name="cust_id">Customer ID</string>
+    <string name="contact_no">Contact No</string>
+    <string name="city_name">City</string>
+
+
+    <!--CRM New  Customer-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_name">Email</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="password">Password</string>
+    <string name="conform_password">Confirm Password</string>
+    <string name="street">Street</string>
+    <string name="country_name">Country</string>
+    <string name="select_country">-Select Country-</string>
+    <string name="region_state">Region/State</string>
+
+
+    <!--order list page -->
+    <string name="pending_approval">Pending Approval</string>
+    <string name="accepted">Accepted</string>
+    <string name="in_progress">In Progress</string>
+    <string name="ready">Dispatch</string>
+    <string name="delivery">Delivery</string>
+    <string name="Order_summary">Order Summery</string>
+    <string name="view">View</string>
+
+
+    <!--order product details  page-->
+    <string name="order_date">ORDER DATE</string>
+    <string name="address">ADDRESS</string>
+    <string name="phone_no">PHONE NO</string>
+    <string name="payment">PAYMENT</string>
+
+
+    <!--;product list-->
+    <string name="add_new_product">Add New Products</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="choose_subcategory">Choose SubCategory</string>
+    <string name="information">Information</string>
+    <string name="price">Price</string>
+    <string name="processing_time">Processing Time</string>
+    <string name="size">Size</string>
+    <string name="kandora_length">Kandora Length</string>
+    <string name="collar_thickness">Collar Thickness</string>
+    <string name="pen_pocket">Pen Pocket</string>
+    <string name="qty">Qty</string>
+    <string name="add_image">Add Images</string>
+    <string name="preview">Preview</string>
+    <string name="add_product">Add Product</string>
+
+
+    <!--store purchase-->
+    <string name="select_customer">Select Customer</string>
+    <string name="create_new_customer">Create New Customer</string>
+    <string name="store_details">Store Details</string>
+    <string name="name">Name:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="email">Email:</string>
+    <string name="country">Country:</string>
+    <string name="city">City:</string>
+    <string name="proceed">Proceed</string>
+    <string name="countryoptionm">Country</string>
+    <string name="cityoption">City</string>
+
+    <string name="united_Arab_Emirates">united Arab Emirates</string>
+    <string name="kuwati">Kuwati</string>
+    <string name="saudi">Saudi</string>
+
+    <string name="save">Save</string>
+
+    <!--store purchase custom kandora page-->
+    <string name="KANDORA_TYPE">KANDORA TYPE</string>
+    <string name="FABRICS">FABRICS</string>
+    <string name="FRONT">FRONT</string>
+    <string name="MEASUREMENT">MEASUREMENT</string>
+
+
+    <string name="Design_Summary">Design Summary</string>
+    <string name="proceed_to_checkout">PROCEED TO CHECKOUT</string>
+
+
+    <!--Tailor Products-->
+    <string name="tailor">Tailor</string>
+    <string name="Category">Category</string>
+    <string name="all">All</string>
+    <string name="kandora">Kandora</string>
+    <string name="Necessities">Necessities</string>
+    <string name="accessories">Accessories</string>
+    <string name="My">My</string>
+    <string name="cart">Cart</string>
+    <string name="cart_itemdetails">Cart Item Details</string>
+    <string name="item">ITEM</string>
+    <string name="PRICE">PRICE</string>
+    <string name="QTY">QTY</string>
+    <string name="SUBTOTAL">SUBTOTAL</string>
+    <string name="TOTAL">TOTAL</string>
+
+
+    <!--Payment page-->
+
+    <string name="payments">Payment</string>
+    <string name="off_line_payment">Off line Payment</string>
+    <string name="place_order">Place Order</string>
+
+
+    <!--product  preview page-->
+    <string name="category">Category:</string>
+    <string name="subcategory">Subcategory:</string>
+    <string name="prices">Prices:</string>
+    <string name="processing">Processing Time:</string>
+    <string name="qtys">Qty:</string>
+    <string name="description">Description:</string>
+    
+    
+    
+    <!--Detail page-->
+    <string name="details_page">Detail</string>
+    <string name="page">Page</string>
+    <string name="recent">Recent</string>
+    <string name="orderId">OrderID</string>
+    <string name="date">Date</string>
+    <string name="value">Value</string>
+
+
+    <!--custom  kandora page-->
+
+    <string name="Custom_Kandora_details">You are not specified the Custom Kandora details. </string>
+    <string name="add_custom_kandora_details">Please add the Custom Kandora details by clicking the below button,</string>
+
+    <string name="kandora_type">Kandora Type</string>
+    <string name="fabrics_type">Fabrics Type</string>
+    <string name="white_very_soft">White - Very Soft</string>
+    <string name="white_hard">White - Hard</string>
+    <string name="colored">Colored</string>
+    <string name="embroidery">Embroidery</string>
+    <string name="side_lines">Side Lines</string>
+    <string name="stitches">Stitches</string>
+    <string name="tarboosh">Tarboosh</string>
+
+
+    <!--new measurement profile -->
+    <string name="please_selectthe_mesurement_type">Please Select the Measurement Type</string>
+    <string name="nick_size">Nick Size</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="chest">Chest</string>
+    <string name="waist">Waist</string>
+    <string name="arm_left">Arm - Left</string>
+    <string name="arm_right">Arm Right</string>
+    <string name="wrist_left">Wrist - Left</string>
+    <string name="wrist_right">Wrist - Right</string>
+    <string name="kandora_lenght">Kandora Length</string>
+    <string name="general_information">General Information</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="front_cross">Front Cross</string>
+    <string name="arm_hole">Arm Hole</string>
+    <string name="biceps">Biceps</string>
+    <string name="cuff_left">Cuff - Left</string>
+    <string name="cuff_right">Cuff - Right</string>
+    <string name="base_width">Base Width</string>
+    <string name="bottom_border_height">Bottom Border Height</string>
+
+    <!--edit custom kandora-->
+    <string name="select_fabrics_type">Select Fabrics Type</string>
+    <string name="save_kandora_style">Save Kandora Style</string>
+
+    <!--add product page error handler-->
+    <string name="please_enter_the_name_in_english">Please enter the product name in english</string>
+    <string name="please_enter_the_name_in_arabic">Please enter the product name in arabic</string>
+    <string name="please_enter_the_product_description_in_english">Please enter the product description in english</string>
+    <string name="please_enter_the_product_description_in_arabic">Please enter the product description in arabic</string>
+    <string name="price_error">Please provide price</string>
+    <string name="processing_time_error">Please provide processing time</string>
+    <string name="please_provide_qty">Please provide quantity</string>
+    <string name="please_enter_the_price">Please enter in the price</string>
+    <string name="please_enter_the_processing_time">Please enter in the processing time</string>
+    <string name="please_enter_the_qty">Please enter in the quantity</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="soft">Soft</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    
+    
+    
+    <!--create customer error handler-->
+    <string name="please_enter_the_first_name">Please enter in the first name</string>
+    <string name="please_enter_the_last_name">Please enter in the last name</string>
+    <string name="please_enter_the_valid_email">Please enter in the  valid email</string>
+    <string name="please_enter_the_mobile_number">Please enter in the mobile number</string>
+    <string name="please_enter_the_password">Please enter in the password</string>
+    <string name="confirm_password">The password is mismatch</string>
+    <string name="please_enter_the_street">Please enter in the street name</string>
+    <string name="please_enter_the_country">Please enter in the  country name</string>
+    <string name="please_enter_the_region">Please enter in the region name</string>
+    <string name="please_enter_the_city">Please enter in the city name</string>
+    
+    
+
+    <string name="kandora_length_52">52</string>
+    <string name="kandora_length_54">54</string>
+    <string name="kandora_length_56">56</string>
+    <string name="kandora_length_58">58</string>
+    <string name="kandora_length_60">60</string>
+    <string name="kandora_length_62">62</string>
+
+    <!--api error handler-->
+
+    <string name="something_went_wrong_while_retrieving_information">Something went wrong while retrieving information. Please try again later.</string>
+    <string name="no_internet">Please check your internet connection</string>
+
+
+    <string-array name="customer_array">
+        <item>@string/united_Arab_Emirates</item>
+        <item>@string/kuwati</item>
+        <item>@string/saudi</item>
+    </string-array>
+
+
+    <string-array name="pen_pocket">
+        <item>@string/yes</item>
+        <item>@string/no</item>
+    </string-array>
+    
+    <string-array name="coller_thickness">
+        <item>@string/soft</item>
+        <item>@string/medium</item>
+        <item>@string/hard</item>
+    </string-array>
+
+
+    <string-array name="kandora_length_array">
+
+        <item>@string/kandora_length_52</item>
+        <item>@string/kandora_length_54</item>
+        <item>@string/kandora_length_56</item>
+        <item>@string/kandora_length_58</item>
+        <item>@string/kandora_length_60</item>
+        <item>@string/kandora_length_62</item>
+    </string-array>
+
+
+
+    
+    
+
+
+</resources>

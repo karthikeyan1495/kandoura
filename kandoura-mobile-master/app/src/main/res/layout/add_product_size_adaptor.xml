@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="productmodal"
+            type="com.example.tailor.kandoraexpress.products.addproducts.modal.ProductModel"/>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:background="@drawable/border_line"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:font="@{@string/source_sans_text_regulart}" />
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/border_line"
+                android:focusable="false"
+                android:hint="Base Price +"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textSize="16sp"
+                app:font="@{@string/source_sans_text_regulart}" />
+
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/border_line"
+                android:hint="Price"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:font="@{@string/source_sans_text_regulart}" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_delete_gray" />
+
+    </RelativeLayout>
+
+</layout>

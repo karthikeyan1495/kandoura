@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="deshboardVm"
+            type="com.example.tailor.kandoraexpress.deshboard.viewmodal.DeshboardVm" />
+
+    </data>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/deshboard_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_line"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <View
+                                    android:layout_width="30dp"
+                                    android:layout_height="1.5dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/blue" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/new_orders"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:text="@string/new1"
+                                            android:textColor="@color/blue"
+                                            android:textSize="18sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:text="@string/order"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@color/colorPrimaryDark"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="30dp"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/order_id"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginStart="10dp"
+                                                android:maxLines="1"
+                                                android:text="@string/customer_name"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="fill_parent"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_weight="1">
+
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/product_name"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/review_accept"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/neworder_recycleview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </android.support.v7.widget.RecyclerView>
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/border_line"
+                            app:cardElevation="3dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <View
+                                    android:layout_width="30dp"
+                                    android:layout_height="1.5dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/blue" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:text="@string/ongoing_orders"
+                                            android:textColor="@color/blue"
+                                            android:textSize="18sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Orders"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+                                        <TextView
+                                            android:id="@+id/ongoing_order_count"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@color/colorPrimaryDark"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
+
+                                            <!--    <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="30dp">-->
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/order_id"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/customer_name"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="fill_parent"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_weight="1">
+
+
+                                            <TextView
+                                                android:layout_width="150dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/delivery_date"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                            <TextView
+                                                android:layout_width="120dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginStart="10dp"
+                                                android:text="@string/status"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                app:font="@{@string/source_sans_text_semibold}" />
+                                            <!--         </RelativeLayout>-->
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/ongoing_recycleview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                    </android.support.v7.widget.RecyclerView>
+
+
+                                    <TextView
+                                        android:id="@+id/accept_review"
+                                        android:layout_width="150dp"
+                                        android:layout_height="40dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginBottom="30dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@color/blue"
+                                        android:gravity="center"
+                                        android:text="View More"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        app:font="@{@string/source_sans_text_semibold}"/>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="50dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="350dp"
+                                    android:elevation="2dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/performanceordetr_chart_container"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginStart="10dp">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Performance (By Orders)"
+                                            android:textColor="@color/black"
+                                            android:textSize="16sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+                                        <TextView
+                                            android:id="@+id/alltime_orders"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/border_line"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:onClick="@{deshboardVm::OnClickordertime}"
+                                            android:text="All Time"
+                                            android:textColor="@color/black"
+                                            android:textSize="16sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/charts"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_below="@+id/alltime_orders"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp" />
+
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/years_orders_charts"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_below="@+id/alltime_orders"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:visibility="invisible" />
+
+
+                                    </RelativeLayout>
+
+
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="350dp"
+                                    android:elevation="2dp"
+                                    app:cardUseCompatPadding="true">
+
+                                    <RelativeLayout
+                                        android:id="@+id/chart_container"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginStart="10dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="10dp"
+                                            android:text="Performance (By Revenue)"
+                                            android:textColor="@color/black"
+                                            android:textSize="16sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+                                        <TextView
+                                            android:id="@+id/alltime_revenue"
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_alignParentEnd="true"
+                                            android:layout_marginEnd="30dp"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/border_line"
+                                            android:gravity="center"
+                                            android:maxLines="1"
+                                            android:onClick="@{deshboardVm::OnClickrevenue}"
+                                            android:text="All Time"
+                                            android:textColor="@color/black"
+                                            android:textSize="16sp"
+                                            app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/chart"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_below="@id/alltime_revenue"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp" />
+
+
+                                        <com.github.mikephil.charting.charts.LineChart
+                                            android:id="@+id/year_revenue_chart"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_below="@id/alltime_revenue"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="10dp"
+                                            android:visibility="invisible" />
+
+                                    </RelativeLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <variable
+            name="storepurchaseVm"
+            type="com.example.tailor.kandoraexpress.storepurchase.viewmodal.StorepurchaseVm" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/select_customertext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="15dp"
+                                android:text="@string/select_customer"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <TextView
+                                android:id="@+id/select_customeroption"
+                                android:layout_width="230dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="20dp"
+                                android:background="@drawable/ic_rect_bg"
+                                android:drawableRight="@drawable/ic_arrow_down_black"
+                                android:gravity="center_vertical"
+                                android:onClick="@{storepurchaseVm::onClickselectcustomer}"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:hint="Select customer"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="70dp"
+                                android:background="@color/blue"
+                                android:gravity="center"
+                                android:onClick="@{storepurchaseVm::OnClicknewCustomer}"
+                                android:text="@string/create_new_customer"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/border"
+                            android:paddingStart="0dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/customer"
+                                android:textColor="@color/blue"
+                                android:textSize="18sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="15dp"
+                                android:text="@string/information"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/border"
+                            android:paddingStart="0dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/name"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                            <TextView
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Ahamed"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/mobile"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                            <TextView
+                                android:id="@+id/mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="689078"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/email"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                            <TextView
+                                android:id="@+id/email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="developer@gmail.com"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/country"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                            <TextView
+                                android:id="@+id/country"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Emarati"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/city"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                            <TextView
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Emarati"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                app:font="@{@string/source_sans_text_regulart}" />
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:onClick="@{storepurchaseVm::OnClickproceed}"
+                            android:text="@string/proceed"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            app:font="@{@string/source_sans_text_regulart}" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</layout>

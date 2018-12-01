@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="customkandoraVm"
+            type="com.example.tailor.kandoraexpress.custom_kandora.viewmodal.CustomKandoraVm" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/border">
+
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:onClick="@{customkandoraVm::onClickclose}"
+                            android:src="@drawable/ic_left_arrow" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_logo_dark" />
+
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="@string/kandora_type"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    app:font="@{@string/source_sans_text_semibold}" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:drawableLeft="@drawable/edit"
+                                    android:layout_alignParentEnd="true"
+                                    android:onClick="@{customkandoraVm::OnClickEdit}"
+                                    android:text="Edit"
+                                    android:drawablePadding="10dp"
+                                    android:textColor="@color/blue"
+                                    android:textSize="20sp"
+                                    app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            </RelativeLayout>
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/kandora_type_recycvleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/fabrics_type"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/fabric_type_recycvleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/white_very_soft"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/white_soft_recycvleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/white_hard"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/white_hard_recycvleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/colored"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/colored_recycvleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/embroidery"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/embroidery_recycleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/side_lines"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/sidelines_recycleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/stitches"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/stitches_recycleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/lightGrey" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="@string/tarboosh"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:font="@{@string/source_sans_text_semibold}" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/tarboosh_recycleview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp">
+
+                            </android.support.v7.widget.RecyclerView>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

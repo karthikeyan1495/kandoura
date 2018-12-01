@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainVm"
+            type="com.example.tailor.kandoraexpress.home.viewmodal.MainActivityVm" />
+
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        tools:openDrawer="start">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary">
+
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+
+                            <ImageView
+                                android:id="@+id/toogleAction"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_menu_1" />
+
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_logo_dark" />
+
+
+                            <ImageView
+                                android:id="@+id/profile"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_user"
+                                android:onClick="@{mainVm::OnClickprofile}"/>
+
+
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.Toolbar>
+
+
+                </android.support.design.widget.AppBarLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+
+      <android.support.design.widget.NavigationView
+            android:id="@+id/navi_view"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:background="@color/border">
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="25dp"
+                      android:src="@drawable/ic_logo_dark"
+                      android:layout_centerVertical="true"/>
+
+              </RelativeLayout>
+
+
+              <TextView
+                  android:id="@+id/navi_homes"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Dashboard"
+                  android:textSize="16sp"
+                  android:layout_marginStart="20dp"
+                  android:textColor="@color/black"
+                  android:drawableLeft="@drawable/ic_desh_board"
+                  android:textAllCaps="false"
+                  android:drawablePadding="15dp"
+                  app:font="@{@string/source_sans_text_semibold}"/>
+
+
+
+              <View
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:paddingStart="0dp"
+                  android:background="@color/border"/>
+
+
+
+
+
+
+              <TextView
+                  android:id="@+id/navi_orders"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/order"
+                  android:textSize="16sp"
+                  android:layout_marginStart="20dp"
+                  android:textColor="@color/black"
+                  android:drawableLeft="@drawable/ic_orders"
+                  android:textAllCaps="false"
+                  android:drawablePadding="15dp"
+                  app:font="@{@string/source_sans_text_semibold}"/>
+
+
+
+              <View
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:paddingStart="0dp"
+                  android:background="@color/border"/>
+
+
+              <TextView
+                  android:id="@+id/navi_products"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/products"
+                  android:layout_marginStart="20dp"
+                  android:textSize="16sp"
+                  android:layout_marginTop="10dp"
+                  android:drawablePadding="15dp"
+                  android:textColor="@color/black"
+                  android:drawableLeft="@drawable/ic_product"
+                  app:font="@{@string/source_sans_text_semibold}"/>
+
+
+
+              <View
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:paddingStart="0dp"
+                  android:background="@color/border"/>
+
+
+              <TextView
+                  android:id="@+id/navi_crm"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/crm"
+                  android:layout_marginStart="20dp"
+                  android:textSize="16sp"
+                  android:layout_marginTop="10dp"
+                  android:drawablePadding="15dp"
+                  android:textColor="@color/black"
+                  android:drawableLeft="@drawable/ic_crm"
+                  app:font="@{@string/source_sans_text_semibold}"/>
+
+
+
+              <View
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:paddingStart="0dp"
+                  android:background="@color/border"/>
+
+
+              <TextView
+                  android:id="@+id/navi_purchase"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/store_purchase"
+                  android:textSize="16sp"
+                  android:layout_marginTop="10dp"
+                  android:textColor="@color/black"
+                  android:drawableLeft="@drawable/ic_storepurchase"
+                  android:layout_marginStart="20dp"
+                  android:drawablePadding="15dp"
+                  app:font="@{@string/source_sans_text_semibold}"/>
+
+
+              <View
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:paddingStart="0dp"
+                  android:background="@color/border"/>
+
+
+
+
+              <TextView
+                  android:id="@+id/navi_custom_kandora"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/custom_kandora"
+                  android:textSize="16sp"
+                  android:layout_marginTop="10dp"
+                  android:textColor="@color/black"
+                  android:drawableLeft="@drawable/ic_custom_kandora"
+                  android:layout_marginStart="20dp"
+                  android:drawablePadding="15dp"
+                  app:font="@{@string/source_sans_text_semibold}"/>
+
+
+
+
+              <View
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:paddingStart="0dp"
+                  android:background="@color/border"/>
+
+
+          </LinearLayout>
+
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</layout>
